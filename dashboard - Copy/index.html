@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=500, initial-scale=1">
+		<title>Jigjiga University Caffe Management System</title>
+		<!--<link rel="stylesheet" href="web-fonts-with-css/css/font-awesome-all.min.css">-->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.12.0-2/css/all.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		
+
+
+		<!--wrapper start-->
+		<div class="wrapper">
+		
+			<!--header menu start-->
+			<div class="header">
+
+				
+
+				<div class="header-menu">
+					<div class="title">CAFFE MANAGEMENT <span>SYSTEM</span></div>
+				<div class="sidebar-btn">
+					<button><img src="menu.png" alt=""></button>
+				</div>
+					
+					<ul>
+						<input type="text" class="search-txt" placeholder="type to search">
+						<li><a  href="#"><i><img src="search.png" alt=""></i></a></li>
+						<li><a href="#"><i><img src="site.png" alt="" title="www.jju.edu.et"></i></a></li>
+						<li><a href="#"><i><img src="power off.png" alt="" title="logout from dashboard"></i></a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<!--header menu end-->
+			<!--sidebar start-->
+			<div class="sidebar">
+				<div class="sidebar-menu">
+					<center class="profile">
+						<img src="jju.png" alt="">
+						<p>JIGJIGA UNIVERSITY</p>
+					</center>
+					<li class="item">
+						<a href="boxses.html" class="menu-btn">
+							<i><img src="dashboard.png" alt=""></i><span>Dashboard</span>
+						</a>
+					</li>
+					<li class="item" id="profile">
+						<a href="#profile" class="menu-btn">
+							<i><img src="registration.png" alt=""></i><span>Regster <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="#"><i class="fas fa-image"></i><span>Students Registrations</span></a>
+							<a href="#"><i class="fas fa-address-card"></i><span>Staff Registrations</span></a>
+						</div>
+					</li>
+					<li class="item" id="messages">
+						<a href="#messages" class="menu-btn">
+							<i><img src="info.png" alt=""></i><span> Info. <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<div class="sub-menu">
+							<a href="student info.html"><i class="fas fa-envelope"></i><span>Cafe Students Info.</span></a>
+							<a href="student info.html"><i class="fas fa-envelope-square"></i><span>Non-Caffe students Info</span></a>
+							<a href="staff info.html"><i class="fas fa-exclamation-circle"></i><span>Staff Info.</span></a>
+						</div>
+					</li>
+					<li class="item" id="settings">
+						<a href="#settings" class="menu-btn">
+							<i><img src="create.png" alt=""></i><span>Creat Staff User <i class="fas fa-chevron-down drop-down"></i></span>
+						</a>
+						<!--<div class="sub-menu">
+							<a href="#"><i class="fas fa-lock"></i><span>Password</span></a>
+							<a href="#"><i class="fas fa-language"></i><span>Language</span></a>
+						</div>-->
+					</li>
+					<li class="item">
+						<a href="#" class="menu-btn">
+							<i><img src="about.png" alt=""></i><span>About</span>
+						</a>
+					</li>
+				</div>
+			</div>
+			<!--sidebar end-->
+			<!--main container start-->
+			<div class="main-container">
+				
+			</div>
+			<!--main container end-->
+		</div>
+		<div class="footer">
+			<marquee behavior="" direction="right">this is jju student Cafe Management System</marquee>
+		</div>
+		<!--wrapper end-->
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(".sidebar-btn").click(function(){
+				$(".wrapper").toggleClass("collapse");
+			});
+		});
+		</script>
+	
+
+
+	</body>
+</html>
